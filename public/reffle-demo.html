@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raffle Widget Demo</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .demo-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #003366;
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .demo-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+        }
+        .demo-section h2 {
+            color: #003366;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 0;
+        }
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        .feature-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .feature-list li:before {
+            content: "✅ ";
+            margin-right: 8px;
+        }
+        .note {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <h1>🎟️ Raffle Widget Demo</h1>
+        
+        <div class="demo-section">
+            <h2>Features</h2>
+            <ul class="feature-list">
+                <li>Collapsed yellow ticket icon (bottom-right, 50×50px)</li>
+                <li>Expanded panel (300×350px) with ticket count</li>
+                <li>"Join the Raffle" button (simulated)</li>
+                <li>"Proceed to Payment" button (simulated)</li>
+                <li>Error handling and loading states</li>
+                <li>Brand colors: Empire Blue (#003366) and Taxi Yellow (#FFCC00)</li>
+                <li>Montserrat and Open Sans fonts</li>
+            </ul>
+        </div>
+
+        <div class="demo-section">
+            <h2>How to Test</h2>
+            <ul class="feature-list">
+                <li>Click the yellow ticket icon in the bottom-right corner</li>
+                <li>Try the "Join the Raffle" button (increments tickets)</li>
+                <li>Try the "Proceed to Payment" button (increments tickets and simulates payment)</li>
+                <li>Check the responsive design and animations</li>
+            </ul>
+        </div>
+
+        <div class="note">
+            <strong>Note:</strong> This demo is frontend-only. The widget is ready for a real backend with dynamic ticket updates and Stripe integration.
+        </div>
+    </div>
+
+    <!-- Load the Raffle Widget -->
+    <script src="raffle-widget.js"></script>
+</body>
+</html>

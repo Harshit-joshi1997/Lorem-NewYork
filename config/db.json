@@ -1,0 +1,7 @@
+{
+  "stories": [],
+  "newsletter": [],
+  "raffle": [
+    { "userId": 123, "tickets": 0 }
+  ]
+}
